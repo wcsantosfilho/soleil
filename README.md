@@ -1,3 +1,3 @@
-# Exerc√≠cio React-Redux
-## Curso Udemy
-### Backend em Node.js
+# MVP - Aplica√√o Gest√o de Desempenho
+## Frontend em React-Redux
+## Backend em Node.js
