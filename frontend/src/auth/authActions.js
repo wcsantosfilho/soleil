@@ -26,28 +26,26 @@ function submit(values, url) {
                     console.log(error.response.data);
                     console.log(error.response.status);
                     console.log(error.response.headers);
+                    error.response.data.errors.forEach(
+                        error => toastr.error('Erro', error))
                 } else if (error.request) {
                     // The request was made but no response was received
                     // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
                     // http.ClientRequest in node.js
                     console.log('--request--')
                     console.log(error.request);                    
+                    error.response.data.errors.forEach(
+                        error => toastr.error('Erro', error))
                 } else {
                     // Something happened in setting up the request that triggered an Error
                     console.log('--Error--')
                     console.log('Error', error.message);
+                    error.response.data.errors.forEach(
+                        error => toastr.error('Erro', error))
                 }
                 console.log('--config--')
                 console.log(error.config)
             })
-            /*
-            .catch(erroreX => {
-                console.log('deu cagada')
-                erroreX.response.data.errors.forEach(
-                    error => toastr.error('Erro', error))
-                    
-            })
-            */
     }
 }
 
