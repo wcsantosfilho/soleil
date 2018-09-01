@@ -2,6 +2,10 @@
   "name": "soleil-backend",
   "version": "1.0.0",
   "description": "Aplicacao para fazer o que deve fazer",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wcsantosfilho/soleil"
+  },
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",

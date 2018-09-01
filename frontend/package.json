@@ -1,14 +1,18 @@
 {
   "name": "soleil-frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "FrontEnd da aplicação Soleil",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wcsantosfilho/soleil"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "production": "webpack --progress -p"
   },
   "keywords": [],
-  "author": "",
+  "author": "Walter Santos Filho",
   "license": "ISC",
   "devDependencies": {
     "admin-lte": "2.3.6",
